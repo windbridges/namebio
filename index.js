@@ -58,6 +58,7 @@ function getLastDomain() {
   }
 
   if (data.length) {
+    console.log(`${data.length} new domains found`)
     console.log('Convert to CSV...')
     const csv = await getCsv(data, path)
     console.log(`Writing data to ${path}...`)
