@@ -52,9 +52,7 @@ function getLastDomain() {
       const lastDomainIndex = data.findIndex(item => item[0] === lastDomain)
 
       if (lastDomainIndex >= 0) {
-        console.log('DATA BEFORE', data)
         data = data.slice(lastDomainIndex + 1)
-        console.log('DATA AFTER', data)
       }
     }
   }
